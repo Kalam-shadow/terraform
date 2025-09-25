@@ -9,7 +9,7 @@ resource "aws_vpc" "terraform_vpc" {
 resource "aws_subnet" "terraform_sub_one" {
   vpc_id            = aws_vpc.terraform_vpc.id
   cidr_block        = var.cidr_block_one
-  
+  availability_zone = var.availability_zone
   tags = {
     Name = "tf_subnet_one"
   } 

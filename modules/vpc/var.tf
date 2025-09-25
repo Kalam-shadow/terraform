@@ -15,3 +15,9 @@ variable "cidr_block_two" {
     type        = string
     default     = "10.0.128.0/24"
 }
+
+variable "availability_zone" {
+  description = "The availability zone in which to create the subnet"
+  type        = string
+  default     = "ap-south-1a"
+}
